@@ -1,0 +1,20 @@
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+img[alt~="spotify"] {
+    width: 56px;
+}
+
+img[alt~="apple"] {
+    width: 45px;
+}
+
+img[alt~="google"] {
+    width: 73px;
+}
+
+img[alt~="pocket"] {
+    width: 77px;
+}
