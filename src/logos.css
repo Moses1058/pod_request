@@ -1,6 +1,8 @@
 .logos {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 33px;
 }
 
 img[alt~="spotify"] {
@@ -17,4 +19,29 @@ img[alt~="google"] {
 
 img[alt~="pocket"] {
     width: 77px;
+}
+
+@media (min-width: 768px) {
+    .logos {
+        order: 5;
+        width: 536px;
+        margin-top: 64px;
+    }
+
+    img[alt~="spotify"] {
+        width: 96px;
+    }
+
+    img[alt~="apple"] {
+        width: 78px;
+    }
+
+    img[alt~="google"] {
+        width: 125px;
+    }
+
+    img[alt~="pocket"] {
+        width: 129px;
+    }
+
 }

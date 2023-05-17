@@ -138,8 +138,18 @@ body {
   font-weight: 400;
   font-style: normal;
   height: 100vh;
+  font-size: 62.5%;
   background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(./assets/mobile/image-host.jpg);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#root {
+  position: relative;
+  z-index: 2;
 }
 
 body::after {
@@ -156,7 +166,41 @@ body::after {
   z-index: 1;
 }
 
-#root {
-  position: relative;
-  z-index: 2;
+@media (min-height: 667px) and (max-width: 768px) {
+  body {
+    align-items: center;
+    position: relative;
+  }
+
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    position: relative;
+    justify-content: unset;
+    background-color: #121725;
+    background-image: url(./assets/tablet/image-host.jpg), url(./assets/desktop/bg-pattern-dots.svg);
+    background-size: 64% auto, 232px 104px;
+    background-position: 100% 0, bottom 0 left 30px;
+
+  }
+
+  #root {
+    position: static;
+  }
+
+  body::after {
+    display: none;
+  }
+}
+
+/* For Desktop */
+@media (min-width: 1440px) {
+  body {
+    align-items: center;
+    background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/desktop/image-host.jpg);
+    background-size: 232px 104px, 62% auto;
+    background-position: bottom 78px right 0, 100% center;
+  }
 }

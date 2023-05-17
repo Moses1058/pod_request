@@ -1,5 +1,78 @@
-h1 {
-    font-size: 2.6rem;
+.App {
     text-align: center;
+    padding: 60px 20px 70px 20px;
+}
+
+.App h1 {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
     color: #54E6AF;
+    text-transform: uppercase;
+    margin: 57px 0 16px 0;
+}
+
+.App span {
+    color: #ffffff;
+}
+
+.App p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #C2CBE5;
+}
+
+@media (min-width: 768px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        background-color: #121725;
+        padding: 93px 0 15px 0;
+        text-align: left;
+        width: 635px;
+        margin-left: 5.2%;
+    }
+
+    img[alt="logo"] {
+        align-self: center;
+        position: absolute;
+        top: 50px;
+        left: 39px;
+    }
+
+    .App h1 {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        margin: 0;
+    }
+
+    .App p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        max-width: 445px;
+        opacity: 0.7;
+        margin: 31px 0 40px 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .App {
+        padding: 88px 0 10px 0;
+        width: 723px;
+        margin-left: 11.5%;
+        margin-top: 125px;
+    }
+
+    img[alt="logo"] {
+        top: 102px;
+        left: 165px;
+    }
+
+    .App h1 {
+        font-size: 5.2rem;
+        line-height: 6.2rem;
+    }
+
+    .App p {
+        margin-top: 24px;
+    }
 }

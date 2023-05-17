@@ -1,0 +1,83 @@
+.input input {
+    width: 327px;
+    height: 46px;
+    background-color: #2C344B;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-indent: 32px;
+    margin: 4.8rem 0 0 0;
+}
+
+.input input:focus {
+    border: none;
+}
+
+.input input::placeholder {
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.input input::placeholder,
+.input button,
+.input input {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.09rem;
+}
+
+.input button {
+    border: none;
+    width: 326px;
+    height: 46px;
+    border-radius: 28px;
+    background: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    color: #121725;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.input button:hover {
+    background: #B3FFE2;
+}
+
+.App .error-text {
+    color: #FB3E3E;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: left;
+    text-indent: 1.6rem;
+    margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .input {
+        position: relative;
+        align-self: flex-start;
+    }
+
+    .App .error-text {
+        margin: 4px 0 0 0;
+    }
+
+    .input input {
+        width: 427px;
+        height: 56px;
+        margin: 0;
+    }
+
+    .input button {
+        width: 162px;
+        margin: 0;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+    }
+}
